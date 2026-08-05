@@ -9,7 +9,7 @@ use App\Models\TripBlock;
 class TripCostEstimator
 {
     /**
-     * Ballpark NZD totals for friends/family planning — not live quotes.
+     * Ballpark NZD figures — all line amounts are per person.
      *
      * @return array{
      *   currency: string,
@@ -19,6 +19,7 @@ class TripCostEstimator
      *   auckland_nights: int,
      *   total: int,
      *   per_person: int,
+     *   party_total: int,
      *   lines: list<array{key:string,label:string,detail:?string,amount:int,category:string}>,
      *   disclaimer: string
      * }
@@ -43,12 +44,12 @@ class TripCostEstimator
 
         if ($trip->include_auckland_stay && $aucklandNights > 0) {
             $rate = (int) ($trip->auckland_airbnb_night ?: 180);
-            $amount = $aucklandNights * $rate;
+            $shared = $aucklandNights * $rate;
             $lines[] = [
                 'key' => 'auckland-stay',
                 'label' => 'Auckland base stay (Airbnb-ish)',
-                'detail' => "{$aucklandNights} night".($aucklandNights === 1 ? '' : 's')." × \${$rate}",
-                'amount' => $amount,
+                'detail' => "{$aucklandNights} night".($aucklandNights === 1 ? '' : 's')." × \${$rate} split {$party} ways",
+                'amount' => $this->share($shared, $party),
                 'category' => 'stay',
             ];
         }
@@ -60,20 +61,20 @@ class TripCostEstimator
         }
 
         foreach ($trip->blocks as $block) {
-            $amount = $this->blockAmount($block, $party);
+            $amount = $this->blockAmountPp($block);
             if ($amount <= 0) {
                 continue;
             }
             $lines[] = [
                 'key' => 'block-'.$block->id,
                 'label' => $block->typeLabel().': '.$block->title,
-                'detail' => $block->day_index ? 'Day '.$block->day_index : 'Unscheduled',
+                'detail' => $block->day_index ? 'Day '.$block->day_index.' · per person' : 'Unscheduled · per person',
                 'amount' => $amount,
                 'category' => $block->type,
             ];
         }
 
-        $total = array_sum(array_column($lines, 'amount'));
+        $perPerson = array_sum(array_column($lines, 'amount'));
 
         return [
             'currency' => 'NZD',
@@ -81,22 +82,23 @@ class TripCostEstimator
             'trip_nights' => $tripNights,
             'nights_away' => $nightsAway,
             'auckland_nights' => $aucklandNights,
-            'total' => $total,
-            'per_person' => (int) round($total / $party),
+            'total' => $perPerson,
+            'per_person' => $perPerson,
+            'party_total' => $perPerson * $party,
             'lines' => $lines,
-            'disclaimer' => 'Rough planning numbers only — flights and Airbnbs swing a lot by season. Use the links to sanity-check before booking.',
+            'disclaimer' => 'All figures are per person. Shared stays/fuel are split across the party. Rough planning numbers only — check flights and Airbnbs before booking.',
         ];
     }
 
     /**
-     * @return array{nights:int,party_size:int,total:int,per_person:int,blurb:string,lines:list<array{label:string,detail:?string,amount:int}>}
+     * @return array{nights:int,party_size:int,total:int,per_person:int,party_total:int,blurb:string,lines:list<array{label:string,detail:?string,amount:int}>}
      */
     public function forLocationAddOn(Location $location, int $partySize = 2, ?int $nights = null): array
     {
         $party = max(1, $partySize);
         $resolvedNights = $nights ?? $this->suggestedNights($location);
         $lines = $this->locationLines($location, $party, $resolvedNights);
-        $total = array_sum(array_column($lines, 'amount'));
+        $perPerson = array_sum(array_column($lines, 'amount'));
 
         $blurb = match ($location->category) {
             'flying' => "Tacking on {$location->name} for ~{$resolvedNights} nights",
@@ -107,8 +109,9 @@ class TripCostEstimator
         return [
             'nights' => $resolvedNights,
             'party_size' => $party,
-            'total' => $total,
-            'per_person' => (int) round($total / max(1, $party)),
+            'total' => $perPerson,
+            'per_person' => $perPerson,
+            'party_total' => $perPerson * $party,
             'blurb' => $blurb,
             'lines' => array_map(fn ($l) => [
                 'label' => $l['label'],
@@ -144,18 +147,19 @@ class TripCostEstimator
             $lines[] = [
                 'key' => 'flight-'.$location->id,
                 'label' => "Flights · {$short}",
-                'detail' => "~\${$flight} return × {$party} people",
-                'amount' => $flight * $party,
+                'detail' => "~\${$flight} return each",
+                'amount' => $flight,
                 'category' => 'flight',
             ];
         }
 
         if ($nights > 0 && $airbnb > 0) {
+            $shared = $nights * $airbnb;
             $lines[] = [
                 'key' => 'stay-'.$location->id,
                 'label' => "Stay · {$short}",
-                'detail' => "{$nights} night".($nights === 1 ? '' : 's')." × \${$airbnb} (Airbnb ballpark)",
-                'amount' => $nights * $airbnb,
+                'detail' => "{$nights} night".($nights === 1 ? '' : 's')." × \${$airbnb} split {$party} ways",
+                'amount' => $this->share($shared, $party),
                 'category' => 'stay',
             ];
         }
@@ -164,8 +168,8 @@ class TripCostEstimator
             $lines[] = [
                 'key' => 'day-'.$location->id,
                 'label' => "Days out · {$short}",
-                'detail' => "{$days} day".($days === 1 ? '' : 's')." × \${$dayPp}/person",
-                'amount' => $days * $dayPp * $party,
+                'detail' => "{$days} day".($days === 1 ? '' : 's')." × \${$dayPp}",
+                'amount' => $days * $dayPp,
                 'category' => 'daily',
             ];
         }
@@ -174,13 +178,18 @@ class TripCostEstimator
             $lines[] = [
                 'key' => 'transport-'.$location->id,
                 'label' => "Getting there · {$short}",
-                'detail' => $location->mode === 'ferry' ? 'Ferry tickets ballpark' : 'Fuel / parking ballpark',
-                'amount' => $transport,
+                'detail' => ($location->mode === 'ferry' ? 'Ferry ballpark' : 'Fuel / parking ballpark')." split {$party} ways",
+                'amount' => $this->share($transport, $party),
                 'category' => 'transport',
             ];
         }
 
         return $lines;
+    }
+
+    private function share(int $sharedTotal, int $party): int
+    {
+        return (int) round($sharedTotal / max(1, $party));
     }
 
     private function nightsFor(Location $location): int
@@ -209,12 +218,12 @@ class TripCostEstimator
         };
     }
 
-    private function blockAmount(TripBlock $block, int $party): int
+    private function blockAmountPp(TripBlock $block): int
     {
         return match ($block->type) {
-            'meal' => 45 * $party,
-            'hangout' => 18 * $party,
-            'find' => 25 * $party,
+            'meal' => 45,
+            'hangout' => 18,
+            'find' => 25,
             default => 0,
         };
     }

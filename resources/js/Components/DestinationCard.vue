@@ -26,6 +26,7 @@ const softBadge = computed(() => {
 });
 
 const previewSubs = computed(() => (props.location.sub_locations || []).slice(0, 4));
+const modeIcon = computed(() => ICONS[props.location.mode] || '');
 
 function toggleTrip(e) {
     e.stopPropagation();
@@ -37,6 +38,14 @@ function toggleTrip(e) {
         router.delete(route('trip.remove', props.location.id), { preserveScroll: true });
     } else {
         router.post(route('trip.add', props.location.id), {}, { preserveScroll: true });
+    }
+}
+
+function openSubMaps(event, url) {
+    event.preventDefault();
+    event.stopPropagation();
+    if (url) {
+        window.open(url, '_blank', 'noopener,noreferrer');
     }
 }
 </script>
@@ -70,11 +79,10 @@ function toggleTrip(e) {
                 </button>
                 <div class="ticket-title-row">
                     <h3>{{ location.name.split(',')[0] }}</h3>
-                    <span
-                        class="time-badge-inline"
-                        :style="{ background: softBadge.bg, color: softBadge.fg }"
-                        v-html="ICONS[location.mode] + ' ' + location.travel_time"
-                    />
+                    <span class="time-badge-inline" :style="{ background: softBadge.bg, color: softBadge.fg }">
+                        <span v-if="modeIcon" v-html="modeIcon" />
+                        {{ location.travel_time }}
+                    </span>
                 </div>
                 <p class="desc line-clamp-2">{{ location.description }}</p>
             </div>
@@ -107,16 +115,15 @@ function toggleTrip(e) {
 
             <div class="ticket-title-row">
                 <h3>{{ location.name }}</h3>
-                <span
-                    class="time-badge-inline"
-                    :style="{ background: softBadge.bg, color: softBadge.fg }"
-                    v-html="ICONS[location.mode] + ' ' + location.travel_time"
-                />
+                <span class="time-badge-inline" :style="{ background: softBadge.bg, color: softBadge.fg }">
+                    <span v-if="modeIcon" v-html="modeIcon" />
+                    {{ location.travel_time }}
+                </span>
             </div>
 
             <p class="desc line-clamp-3">{{ location.description }}</p>
             <p v-if="location.cost_estimate" class="mt-2 text-[12.5px] font-medium text-[var(--ink)]">
-                ~${{ location.cost_estimate.total.toLocaleString() }} add-on
+                ~${{ location.cost_estimate.per_person.toLocaleString() }}/person
                 <span class="font-normal text-[var(--muted)]">
                     · {{ location.cost_estimate.nights
                         ? `${location.cost_estimate.nights} night${location.cost_estimate.nights === 1 ? '' : 's'}`
@@ -124,15 +131,15 @@ function toggleTrip(e) {
                 </span>
             </p>
 
-            <div v-if="previewSubs.length" class="subspot-row">
+            <div v-if="previewSubs.length" class="subspot-row" @click.stop>
                 <a
                     v-for="sub in previewSubs"
                     :key="sub.id"
                     class="subspot-chip"
-                    :href="sub.maps_url"
+                    :href="sub.maps_url || '#'"
                     target="_blank"
-                    rel="noopener"
-                    @click.stop
+                    rel="noopener noreferrer"
+                    @click="openSubMaps($event, sub.maps_url)"
                 >
                     <span
                         v-if="sub.image_url"

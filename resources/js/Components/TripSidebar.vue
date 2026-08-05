@@ -41,11 +41,11 @@ const emit = defineEmits(['learn-more', 'focus']);
                 v-if="trip?.cost_summary && trip.locations?.length"
                 class="mt-3 rounded-2xl bg-white/80 px-3 py-2.5"
             >
-                <p class="text-[10px] font-semibold uppercase tracking-wide text-[var(--muted)]">Rough trip total</p>
+                <p class="text-[10px] font-semibold uppercase tracking-wide text-[var(--muted)]">Rough / person</p>
                 <p class="mt-0.5 text-lg font-semibold tracking-tight tabular-nums">
-                    ~${{ trip.cost_summary.total.toLocaleString() }}
+                    ~${{ trip.cost_summary.per_person.toLocaleString() }}
                     <span class="text-[12px] font-normal text-[var(--muted)]">
-                        · ${{ trip.cost_summary.per_person.toLocaleString() }}/pp
+                        · ${{ (trip.cost_summary.party_total || trip.cost_summary.per_person * trip.cost_summary.party_size).toLocaleString() }} party
                     </span>
                 </p>
                 <Link

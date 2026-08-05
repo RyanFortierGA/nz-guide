@@ -59,8 +59,14 @@ function toggleTrip() {
                         <span
                             class="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-[12px] font-semibold"
                             :style="{ background: softBadge.bg, color: softBadge.fg }"
-                            v-html="ICONS[location.mode] + ' ' + location.travel_time"
-                        />
+                        >
+                            <span
+                                v-if="ICONS[location.mode]"
+                                class="inline-flex shrink-0 [&_svg]:!h-3 [&_svg]:!w-3"
+                                v-html="ICONS[location.mode]"
+                            />
+                            {{ location.travel_time }}
+                        </span>
                         <a
                             v-if="location.maps_url"
                             :href="location.maps_url"
@@ -90,14 +96,14 @@ function toggleTrip() {
                         <div class="flex flex-wrap items-baseline justify-between gap-2">
                             <div>
                                 <p class="text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">
-                                    Estimated add-on
+                                    Estimated add-on / person
                                 </p>
                                 <p class="mt-1 text-[15px] font-medium leading-snug">
                                     {{ location.cost_estimate.blurb }}
                                 </p>
                             </div>
                             <p class="text-2xl font-semibold tracking-tight tabular-nums">
-                                ~${{ location.cost_estimate.total.toLocaleString() }}
+                                ~${{ location.cost_estimate.per_person.toLocaleString() }}
                             </p>
                         </div>
                         <ul class="mt-3 space-y-1.5 border-t border-[var(--line)] pt-3">
@@ -114,9 +120,8 @@ function toggleTrip() {
                             </li>
                         </ul>
                         <p class="mt-3 text-[11.5px] leading-relaxed text-[var(--muted)]">
-                            Rough NZD for {{ location.cost_estimate.party_size }}
-                            {{ location.cost_estimate.party_size === 1 ? 'person' : 'people' }}
-                            · ~${{ location.cost_estimate.per_person.toLocaleString() }}/person.
+                            Per person · party of {{ location.cost_estimate.party_size }} ≈
+                            ${{ location.cost_estimate.party_total.toLocaleString() }} total.
                             Side trips also free up Auckland Airbnb nights.
                         </p>
                     </div>
@@ -129,10 +134,11 @@ function toggleTrip() {
                             <a
                                 v-for="sub in location.sub_locations"
                                 :key="sub.id"
-                                :href="sub.maps_url"
+                                :href="sub.maps_url || '#'"
                                 target="_blank"
-                                rel="noopener"
+                                rel="noopener noreferrer"
                                 class="group flex gap-3 overflow-hidden rounded-2xl border border-[var(--line)] bg-[#fafafa] p-2 pr-3 transition hover:border-[var(--ink)] hover:bg-white"
+                                @click.stop
                             >
                                 <div
                                     class="h-16 w-20 shrink-0 rounded-xl bg-cover bg-center bg-[#e8e8e8]"

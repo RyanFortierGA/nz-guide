@@ -92,33 +92,43 @@ body {
 
 .ticket-title-row {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
     padding-right: 28px;
 }
 .ticket-title-row h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 650;
     letter-spacing: -0.02em;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
 .time-badge-inline {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
     border-radius: 100px;
-    padding: 5px 10px;
-    font-size: 11.5px;
+    padding: 4px 10px;
+    font-size: 11px;
     font-weight: 700;
     font-family: 'JetBrains Mono', monospace;
     white-space: nowrap;
+    line-height: 1;
+    max-width: 100%;
 }
-.time-badge-inline svg {
-    width: 12px;
-    height: 12px;
+.time-badge-inline svg,
+.pin-label svg,
+.leaflet-popup-content svg {
+    width: 12px !important;
+    height: 12px !important;
+    min-width: 12px;
+    min-height: 12px;
+    max-width: 12px;
+    max-height: 12px;
+    flex-shrink: 0;
+    display: block;
 }
 
 .desc {
@@ -167,9 +177,14 @@ body {
     color: #333;
     background: #fff;
     text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    pointer-events: auto;
 }
 .subspot-chip:hover {
     border-color: var(--ink);
+    background: #fafafa;
 }
 .subspot-chip-img {
     width: 22px;
@@ -255,6 +270,13 @@ body {
     font-size: 10.5px;
 }
 
+.leaflet-div-icon.dest-pin-icon,
+.leaflet-div-icon.sub-pin-icon,
+.leaflet-div-icon {
+    background: transparent !important;
+    border: none !important;
+}
+
 .pill-filter {
     font-weight: 650;
     font-size: 11.5px;
@@ -295,8 +317,12 @@ body {
     align-items: center;
     pointer-events: none;
 }
-.pin-label {
+.pin-label,
+.sub-pin-label {
     pointer-events: auto;
+    cursor: pointer;
+}
+.pin-label {
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 100px;
@@ -310,10 +336,10 @@ body {
     white-space: nowrap;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
 }
-.pin-label svg {
-    width: 12px;
-    height: 12px;
-    flex-shrink: 0;
+.pin-label span {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
 }
 .pin-tail {
     width: 1.5px;

@@ -29,14 +29,14 @@ function catalog() {
 function pinIcon(d) {
     const c = props.categoryColors[d.category];
     return L.divIcon({
-        className: '',
+        className: 'dest-pin-icon',
         html: `<div class="pin-wrap">
-            <div class="pin-label"><span style="color:${c}">${ICONS[d.mode]}</span><span>${d.name.split(',')[0]}</span></div>
+            <div class="pin-label"><span style="color:${c}">${ICONS[d.mode] || ''}</span><span>${d.name.split(',')[0]}</span></div>
             <div class="pin-tail"></div>
             <div class="pin-dot" style="background:${c}"></div>
           </div>`,
-        iconSize: [0, 0],
-        iconAnchor: [0, 5],
+        iconSize: [140, 44],
+        iconAnchor: [70, 44],
     });
 }
 
@@ -44,7 +44,7 @@ function popupHtml(d) {
     return `<div style="width:200px">
     <div style="width:100%;height:100px;border-radius:10px;background-size:cover;background-position:center;margin-bottom:8px;background-image:url('${d.image_url}')"></div>
     <h4 style="font-size:14px;font-weight:600;margin:0 0 4px">${d.name}</h4>
-    <p style="font-size:11px;color:#787f88;margin:0;display:flex;align-items:center;gap:5px">${ICONS[d.mode]}${d.travel_time} from home</p>
+    <p style="font-size:11px;color:#787f88;margin:0;display:flex;align-items:center;gap:5px">${ICONS[d.mode] || ''}<span>${d.travel_time} from home</span></p>
   </div>`;
 }
 
@@ -102,10 +102,10 @@ function initMap() {
     }).addTo(map);
 
     const homeIcon = L.divIcon({
-        className: '',
+        className: 'dest-pin-icon',
         html: `<div class="home-wrap"><div class="home-marker"></div><div class="home-label">Home</div></div>`,
-        iconSize: [0, 0],
-        iconAnchor: [8, 8],
+        iconSize: [72, 48],
+        iconAnchor: [36, 18],
     });
     L.marker([props.home.lat, props.home.lng], { icon: homeIcon })
         .addTo(map)
@@ -125,22 +125,25 @@ function initMap() {
             const c = props.categoryColors[parent.category];
             const marker = L.marker([s.lat, s.lng], {
                 icon: L.divIcon({
-                    className: '',
+                    className: 'sub-pin-icon',
                     html: `<div class="pin-wrap"><div class="sub-pin-label" style="border-left:3px solid ${c}">${s.name}</div></div>`,
-                    iconSize: [0, 0],
-                    iconAnchor: [0, 0],
+                    iconSize: [120, 28],
+                    iconAnchor: [60, 14],
                 }),
-                zIndexOffset: -100,
+                zIndexOffset: 200,
+                riseOnHover: true,
             });
+            const mapsUrl = s.maps_url
+                || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${s.name}@${s.lat},${s.lng}`)}`;
             const photo = s.image_url
                 ? `<div style="height:80px;border-radius:8px;background-size:cover;background-position:center;margin-bottom:6px;background-image:url('${s.image_url}')"></div>`
                 : '';
-            const maps = s.maps_url
-                ? `<a href="${s.maps_url}" target="_blank" rel="noopener" style="font-size:11px;font-weight:600">Open in Maps ›</a>`
-                : '';
             marker.bindPopup(
-                `<div style="width:180px">${photo}<b>${s.name}</b><div style="font-size:10px;color:#787f88;margin:3px 0 6px">near ${parent.name}</div>${maps}</div>`,
+                `<div style="width:180px">${photo}<b>${s.name}</b><div style="font-size:10px;color:#787f88;margin:3px 0 6px">near ${parent.name}</div><a href="${mapsUrl}" target="_blank" rel="noopener" style="font-size:11px;font-weight:600">Open in Maps ›</a></div>`,
             );
+            marker.on('click', (e) => {
+                L.DomEvent.stopPropagation(e);
+            });
             subByParent[parent.id].push(marker);
         });
     });

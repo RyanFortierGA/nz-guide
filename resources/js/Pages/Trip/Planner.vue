@@ -179,7 +179,7 @@ async function copyShare() {
                                 <p class="truncate text-sm font-semibold">{{ place.name }}</p>
                                 <p class="text-[11px] text-[var(--muted)]">{{ place.travel_time }}</p>
                                 <p v-if="place.cost_preview" class="mt-1 text-[11px] font-medium text-[var(--ink)]">
-                                    ~${{ place.cost_preview.total.toLocaleString() }} add-on
+                                    ~${{ place.cost_preview.per_person.toLocaleString() }}/person
                                 </p>
                                 <select
                                     class="mt-2 w-full rounded-lg border-gray-200 text-xs"
@@ -326,7 +326,7 @@ async function copyShare() {
                                     <p class="font-semibold">{{ item.name }}</p>
                                     <p class="line-clamp-1 text-[12.5px] text-[var(--muted)]">{{ item.description }}</p>
                                     <p v-if="item.cost_preview" class="mt-1 text-[11px] font-medium text-[var(--ink)]">
-                                        ~${{ item.cost_preview.total.toLocaleString() }}
+                                        ~${{ item.cost_preview.per_person.toLocaleString() }}/person
                                         <span v-if="item.category !== 'local'" class="font-normal text-[var(--muted)]">
                                             · {{ item.nights ?? item.cost_preview.nights }} nights away
                                         </span>
