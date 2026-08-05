@@ -19,6 +19,9 @@ class Trip extends Model
         'share_token',
         'share_blurb',
         'setup_complete',
+        'party_size',
+        'include_auckland_stay',
+        'auckland_airbnb_night',
         'is_default',
     ];
 
@@ -27,8 +30,11 @@ class Trip extends Model
         return [
             'is_default' => 'boolean',
             'setup_complete' => 'boolean',
+            'include_auckland_stay' => 'boolean',
             'arrives_at' => 'datetime',
             'departs_at' => 'datetime',
+            'party_size' => 'integer',
+            'auckland_airbnb_night' => 'integer',
         ];
     }
 
@@ -40,7 +46,7 @@ class Trip extends Model
     public function locations(): BelongsToMany
     {
         return $this->belongsToMany(Location::class, 'trip_location')
-            ->withPivot(['id', 'sort_order', 'notes', 'day_index', 'planned_time'])
+            ->withPivot(['id', 'sort_order', 'notes', 'day_index', 'planned_time', 'nights'])
             ->withTimestamps()
             ->orderByPivot('day_index')
             ->orderByPivot('planned_time')

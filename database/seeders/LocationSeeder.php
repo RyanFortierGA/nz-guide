@@ -34,6 +34,7 @@ class LocationSeeder extends Seeder
                     'image_url_2' => $row['image_url_2'],
                     'airport_code' => $row['airport_code'],
                     'airbnb_query' => $row['airbnb_query'],
+                    'maps_url' => $row['maps_url'] ?? null,
                     'is_published' => true,
                 ]
             );
@@ -53,6 +54,7 @@ class LocationSeeder extends Seeder
                 'lat' => $row['lat'],
                 'lng' => $row['lng'],
                 'image_url' => $row['image_url'],
+                'maps_url' => $row['maps_url'] ?? null,
             ]);
         }
     }

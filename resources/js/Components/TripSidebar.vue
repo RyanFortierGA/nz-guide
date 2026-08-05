@@ -36,6 +36,26 @@ const emit = defineEmits(['learn-more', 'focus']);
                     Open share link
                 </Link>
             </div>
+
+            <div
+                v-if="trip?.cost_summary && trip.locations?.length"
+                class="mt-3 rounded-2xl bg-white/80 px-3 py-2.5"
+            >
+                <p class="text-[10px] font-semibold uppercase tracking-wide text-[var(--muted)]">Rough trip total</p>
+                <p class="mt-0.5 text-lg font-semibold tracking-tight tabular-nums">
+                    ~${{ trip.cost_summary.total.toLocaleString() }}
+                    <span class="text-[12px] font-normal text-[var(--muted)]">
+                        · ${{ trip.cost_summary.per_person.toLocaleString() }}/pp
+                    </span>
+                </p>
+                <Link
+                    v-if="trip.setup_complete"
+                    :href="route('trip.show')"
+                    class="mt-1 inline-block text-[11px] font-medium text-[var(--ink)] underline-offset-2 hover:underline"
+                >
+                    Open price calculator ›
+                </Link>
+            </div>
         </div>
 
         <div class="flex-1 space-y-3 overflow-y-auto p-3">

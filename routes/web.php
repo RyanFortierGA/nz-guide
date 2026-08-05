@@ -34,6 +34,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/trip/locations/{location}', [TripController::class, 'add'])->name('trip.add');
     Route::delete('/trip/locations/{location}', [TripController::class, 'remove'])->name('trip.remove');
     Route::patch('/trip/locations/{location}', [TripController::class, 'assignDay'])->name('trip.assign');
+    Route::patch('/trip/costs', [TripController::class, 'updateCosts'])->name('trip.costs');
     Route::patch('/trip/reorder', [TripController::class, 'reorder'])->name('trip.reorder');
 
     Route::post('/trip/blocks', [TripBlockController::class, 'store'])->name('trip.blocks.store');

@@ -24,6 +24,12 @@ class Location extends Model
         'image_url_2',
         'airport_code',
         'airbnb_query',
+        'maps_url',
+        'cost_flight_pp',
+        'cost_airbnb_night',
+        'cost_day_pp',
+        'cost_suggested_nights',
+        'cost_transport',
         'created_by',
         'is_published',
     ];
@@ -35,6 +41,11 @@ class Location extends Model
             'lat' => 'float',
             'lng' => 'float',
             'is_published' => 'boolean',
+            'cost_flight_pp' => 'integer',
+            'cost_airbnb_night' => 'integer',
+            'cost_day_pp' => 'integer',
+            'cost_suggested_nights' => 'integer',
+            'cost_transport' => 'integer',
         ];
     }
 
@@ -53,6 +64,15 @@ class Location extends Model
         return $this->belongsToMany(Trip::class, 'trip_location')
             ->withPivot(['sort_order', 'notes'])
             ->withTimestamps();
+    }
+
+    public function mapsUrl(): string
+    {
+        if ($this->maps_url) {
+            return $this->maps_url;
+        }
+
+        return 'https://www.google.com/maps/search/?api=1&query='.urlencode("{$this->lat},{$this->lng}");
     }
 
     public function airbnbSearchUrl(): string

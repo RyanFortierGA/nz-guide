@@ -1,4 +1,5 @@
 <script setup>
+import CostPanel from '@/Components/CostPanel.vue';
 import SeoHead from '@/Components/SeoHead.vue';
 import ExploreLayout from '@/Layouts/ExploreLayout.vue';
 import { Link, router, useForm } from '@inertiajs/vue3';
@@ -6,6 +7,7 @@ import { computed, ref } from 'vue';
 
 const props = defineProps({
     trip: Object,
+    costs: Object,
     blockTypes: Object,
     categoryColors: Object,
 });
@@ -150,7 +152,7 @@ async function copyShare() {
             </p>
         </div>
 
-        <div class="grid gap-6 px-5 py-6 lg:grid-cols-[280px_1fr] sm:px-8">
+        <div class="grid gap-6 px-5 py-6 lg:grid-cols-[280px_1fr_300px] sm:px-8">
             <aside class="space-y-4">
                 <div>
                     <h2 class="text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">Unscheduled places</h2>
@@ -176,6 +178,9 @@ async function copyShare() {
                             <div class="min-w-0 flex-1">
                                 <p class="truncate text-sm font-semibold">{{ place.name }}</p>
                                 <p class="text-[11px] text-[var(--muted)]">{{ place.travel_time }}</p>
+                                <p v-if="place.cost_preview" class="mt-1 text-[11px] font-medium text-[var(--ink)]">
+                                    ~${{ place.cost_preview.total.toLocaleString() }} add-on
+                                </p>
                                 <select
                                     class="mt-2 w-full rounded-lg border-gray-200 text-xs"
                                     @change="assign(place.id, Number($event.target.value) || null)"
@@ -320,6 +325,12 @@ async function copyShare() {
                                 <div class="min-w-0 flex-1">
                                     <p class="font-semibold">{{ item.name }}</p>
                                     <p class="line-clamp-1 text-[12.5px] text-[var(--muted)]">{{ item.description }}</p>
+                                    <p v-if="item.cost_preview" class="mt-1 text-[11px] font-medium text-[var(--ink)]">
+                                        ~${{ item.cost_preview.total.toLocaleString() }}
+                                        <span v-if="item.category !== 'local'" class="font-normal text-[var(--muted)]">
+                                            · {{ item.nights ?? item.cost_preview.nights }} nights away
+                                        </span>
+                                    </p>
                                 </div>
                                 <label class="flex items-center gap-2 text-[11px] text-[var(--muted)]">
                                     Time
@@ -392,6 +403,8 @@ async function copyShare() {
                     </ul>
                 </article>
             </div>
+
+            <CostPanel v-if="costs" :trip="trip" :costs="costs" />
         </div>
     </ExploreLayout>
 </template>

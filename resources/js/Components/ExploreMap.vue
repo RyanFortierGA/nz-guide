@@ -31,8 +31,8 @@ function pinIcon(d) {
     return L.divIcon({
         className: '',
         html: `<div class="pin-wrap">
-            <div class="pin-label" style="border-color:${c}"><span style="color:${c}">${ICONS[d.mode]}</span><span>${d.name.split(',')[0]}</span></div>
-            <div class="pin-tail" style="background:${c}"></div>
+            <div class="pin-label"><span style="color:${c}">${ICONS[d.mode]}</span><span>${d.name.split(',')[0]}</span></div>
+            <div class="pin-tail"></div>
             <div class="pin-dot" style="background:${c}"></div>
           </div>`,
         iconSize: [0, 0],
@@ -95,7 +95,7 @@ function updateSubVisibility() {
 
 function initMap() {
     map = L.map(mapEl.value, { scrollWheelZoom: true, zoomControl: true }).setView([-36.85, 174.76], 10);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
         maxZoom: 18,
         subdomains: 'abcd',
@@ -123,19 +123,25 @@ function initMap() {
         subByParent[parent.id] = [];
         (parent.sub_locations || []).forEach((s) => {
             const c = props.categoryColors[parent.category];
-            const dot = L.circleMarker([s.lat, s.lng], {
-                radius: 5,
-                weight: 2,
-                color: c,
-                fillColor: '#fff',
-                fillOpacity: 1,
+            const marker = L.marker([s.lat, s.lng], {
+                icon: L.divIcon({
+                    className: '',
+                    html: `<div class="pin-wrap"><div class="sub-pin-label" style="border-left:3px solid ${c}">${s.name}</div></div>`,
+                    iconSize: [0, 0],
+                    iconAnchor: [0, 0],
+                }),
+                zIndexOffset: -100,
             });
             const photo = s.image_url
                 ? `<div style="height:80px;border-radius:8px;background-size:cover;background-position:center;margin-bottom:6px;background-image:url('${s.image_url}')"></div>`
                 : '';
-            dot.bindTooltip(s.name, { direction: 'top', offset: [0, -4] });
-            dot.bindPopup(`${photo}<b>${s.name}</b><div style="font-size:10px;color:#787f88;margin-top:3px">near ${parent.name}</div>`);
-            subByParent[parent.id].push(dot);
+            const maps = s.maps_url
+                ? `<a href="${s.maps_url}" target="_blank" rel="noopener" style="font-size:11px;font-weight:600">Open in Maps ›</a>`
+                : '';
+            marker.bindPopup(
+                `<div style="width:180px">${photo}<b>${s.name}</b><div style="font-size:10px;color:#787f88;margin:3px 0 6px">near ${parent.name}</div>${maps}</div>`,
+            );
+            subByParent[parent.id].push(marker);
         });
     });
 

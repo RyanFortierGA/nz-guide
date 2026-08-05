@@ -13,6 +13,7 @@ class SubLocation extends Model
         'lat',
         'lng',
         'image_url',
+        'maps_url',
     ];
 
     protected function casts(): array
@@ -26,5 +27,14 @@ class SubLocation extends Model
     public function location(): BelongsTo
     {
         return $this->belongsTo(Location::class);
+    }
+
+    public function mapsUrl(): string
+    {
+        if ($this->maps_url) {
+            return $this->maps_url;
+        }
+
+        return 'https://www.google.com/maps/search/?api=1&query='.urlencode("{$this->name}@{$this->lat},{$this->lng}");
     }
 }

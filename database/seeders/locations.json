@@ -16,10 +16,11 @@
         "Gibbston Valley wine tasting",
         "Milford Sound day trip"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjDObRMzxjVFM8TdlOx1fA0_T5uJlzFjP83vfNxtTRVA22rjara_bVKq3JdZcrOdxAdGEqSeYMV69QKBbU-wcSoOAvrEyDmhnFgt3pzCOfCtj3lameFsmvhDF6i_a-7PlINh56RqalBM027bjA=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjCoM9O5VZ8tfP0RzkTOIZY3nkck28oZV5JvoKln3NWkaz3Dhxr-1pKRdqbhFoYxZ3AsRWDsMe_BOedk9Z73gqSxfseV0wlHibSbdaNOgIIiN23waTFbjJvetrmyMdKiNuBUQr63qdujnzz7uw=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1578271881656-fe9fac4055ba?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1400&q=80",
       "airport_code": "ZQN",
-      "airbnb_query": "Queenstown"
+      "airbnb_query": "Queenstown",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Queenstown%2C%20NZ%40-45.0301511%2C168.6615141"
     },
     {
       "slug": "brisbane",
@@ -37,10 +38,11 @@
         "Story Bridge climb",
         "Gold Coast day trip"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjAxXsXYeHxy3ZRJGNub-C7AHAjmvMgzBYOJHmbAO5J69kdcDQWfHelbWZ13tEwNGwVNve1_C1zGkWkg-7AP8zHIEP3TKpkzmt4sVn7VR2PHVp4Yx8v8aFpfPFW2m-mX0l_yNakJrCQmM9j8_Js=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjDtv2RVLe-0HBJq1O9FOVMkv6AHSSClSSmncE7FX6vUgGHPoH8m-yw-asejosu9g0k1fQL64v0QPx3V6YQAzM_n8XRe-LAeOXuCDlkHmutEloACcwb7pNa19oF8i72ZpKtYEh_KMKX5B5mf-vY=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1523482580671-d19b5e9b5c34?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1400&q=80",
       "airport_code": "BNE",
-      "airbnb_query": "Brisbane"
+      "airbnb_query": "Brisbane",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Brisbane%2C%20AUS%40-27.4704528%2C153.0260341"
     },
     {
       "slug": "sydney",
@@ -58,10 +60,11 @@
         "Manly ferry",
         "Taronga Zoo"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjBkzketgC6pebiq8IHP4IsyQW0o0cHZKT3LFMJkBC9vI9udtK5T4adsP0UHVdhsqQAgK0Lo-0alRFXQ8gWEfkXZNkNAsIHNA3K2v9NZaYKq0Echqxo1VagrpY8P54-rmXDqRywSXd5zKX4JwQ=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjAtTXjCtmBwy49VgS-7lr5YRpaH27EeCwWeahhofYH6f3vbITp1u2OMtx2xGBLrx7D7zPJV-nrogu9M-bbTkjRe8BOGDv7z6-HtyJK4zAaNOkpuZdc_n6GY4wXnCGiFELuL40FT67oiP_lEhIJj-M2Y_Q=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1523428096881-5bd79d043006?auto=format&fit=crop&w=1400&q=80",
       "airport_code": "SYD",
-      "airbnb_query": "Sydney"
+      "airbnb_query": "Sydney",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Sydney%2C%20AUS%40-33.8688%2C151.2093"
     },
     {
       "slug": "fiji",
@@ -79,10 +82,11 @@
         "Cloud 9 floating bar",
         "Village cultural tour"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjBSiOcjxLJAvLDODAvLwPIHJaVf8jEdOkQFZtfrxHKrbVLQT_YC0CwjBWIHsxBzibvR3FXWp9f0uvT9-BXnQVDPJOWJRp-NBYK08hbpWXbplSSyQDG0uqEd1ktQ03ya8rp-fzfQcx-Gjkd7=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjAbfOFo5IyzWtI0fznilatMgYjnVMgKgBUqyoc8Y9WJZii6XMzW4ia2lCRDbs2tLNWLjg79jqE08tkXu7MLOj21I9jyJMkV3dLloH4V9ZqIdDIuduBfpNspnYdGEyZBLsx4ApMDwExxAUmDiQ=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1589197331516-4d84b72eb2ad?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1400&q=80",
       "airport_code": "NAN",
-      "airbnb_query": "Fiji"
+      "airbnb_query": "Fiji",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Fiji%40-17.7806257%2C177.4298961"
     },
     {
       "slug": "taupo",
@@ -100,10 +104,11 @@
         "Skydiving over the lake",
         "Māori rock carvings by boat"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjAneA5XzIHTgHneTh68h85rH6Xk3GjH3Hi8YsltmNxxXGSOoAERQoHETTjb16nAeT8Z3opP6ARgu0hHdhTELgwCfqPeO5yIRiyM1ALwlGbT99VCJkAG_hvXAq0XFwIm1NSAPqJYUQeKRvWN=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjAsBFsdzhvZvGjiAHPXE_V7_s6KbiafDV43Ch5f98TR8JJD-fmdmFpdRCTmOJnk99VE6WLBso_bFtE_dBNjRmQj0USdO7bWO5kGWOsVVGvDRGmluB1SQn2iqaX4hNW6vpTnjl_9K2WXsSAJVg=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1605640840607-3ee222dfbae6?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Taupo"
+      "airbnb_query": "Taupo",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Taupo%40-38.6842862%2C176.0704465"
     },
     {
       "slug": "rotorua",
@@ -121,10 +126,11 @@
         "Redwoods Treewalk",
         "Māori cultural evening"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjDpby46FfVJaHR92SBohOSUMmOuZrivFK1ngCmTfF4B2m2-C3qKGoELEVbfwCDXI7kDyo597FLu_A3loWPLTJ4SNvg_BivH7kezpYVOhb8hu15Toswpq-QkYuORTaH3mAOThqb_MfwTg2FDjZ3hjTzC=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjBAB4FCIt6pkFz3WD-4aqCtpsa-OGvEj8HcY4QQoxGEb59fr0yRl-5WyV8iX5CkENRKBH8Q-b6tHQve5BxyC_uXrBe7pqQa9-2IpotoefnENuowy3CXSSFDZ6Qp80LWxx4mhSnH4MPuX5X6bw=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1589802829985-817e51170b0d?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Rotorua"
+      "airbnb_query": "Rotorua",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Rotorua%40-38.1445987%2C176.2377669"
     },
     {
       "slug": "tauranga",
@@ -142,10 +148,11 @@
         "Harbour kayaking",
         "Marine Parade cafés"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjDvR9YDvxXRs9Lwl7BI7EhkLOd6R9sTStVmI-CqZbjePwqVsveIZRxYOQgjZfVJ1nKPb2X1sv46E5IjdMo3MCi89NzDnB3qBrRtq7KaPFO8gpNExB1Be9Um5ooCjU2R_j-7-_vsqTfDW4SwYg=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjB9U5EmRu9PVjw4n2mN8do1TtBlWCmkWQH9vAO2Se02u0dnY1ycU7GsU9u9Ddc09A3FuPUaGCA2zxS65CooveHlThqBBPszkIp-5XWsr2P2WVl4gGR6RhdFgPPAXyYa9uKLrB7SRZ1RNCUdoEU=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Tauranga"
+      "airbnb_query": "Tauranga",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Tauranga%40-37.6646852%2C176.2080948"
     },
     {
       "slug": "hobbiton",
@@ -163,10 +170,11 @@
         "Garden photography",
         "Pair with Waitomo Caves"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjCIIVAwl31XXWxoYq-ct3srFvRjqABSMWKedEuobRKEtVGiA2Rn0VKD06sWO3gyunjRkuwDmct5HZZ5qBehTk9RNnc1XfDzv0Gn47zrrDevpD0IbZcX_CuGaqS96zKOBf2M471U1uq5RCMbVpM=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjBchU8vY5qnJaY0hlPFiG-8h_iCq2ny_UAqhvzi6nYArQXh0dbInh9rynE_OJk4givTnOg-wSbzFLjWCXH8mmX4i26tg-Slh_yYlBdHCWLT0FAETd8Ohe7S1p3NtPod8EBMpnXASEDcNs9obA=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Hobbiton"
+      "airbnb_query": "Hobbiton",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Hobbiton%40-37.8720905%2C175.6829096"
     },
     {
       "slug": "bayofislands",
@@ -184,10 +192,11 @@
         "Waitangi Treaty Grounds",
         "Russell historic village"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjBrZwgBacKaVsR7AKnr0T0H5PxfXVzIBwDm7I8DCjM5pVO0C5f0kGpMBAUg0A3x8t9T0XoAYVll5YgWfn2uoj7KVoVVODpYY3XHWrQi9PpxaV7vECAPXzR-m-6BVkYEMc9Pazg9m5xKDrNN=s4800-w767-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjA6_VBOlQUU6P1qqY4Fijgz-e7pwpll9hRuoI0NxPtpwTYGpqJ2Lw_jkMgCt9rx-ngXz4ZiCC_r9A6P-BY-8hevagr0vyeSZzD88_q7cnhxhxP-MJnh-4yY_uaguKXyjhmca99b2oKN_9D68w=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Bay of Islands"
+      "airbnb_query": "Bay of Islands",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Bay%20of%20Islands%40-35.2821294%2C174.0910282"
     },
     {
       "slug": "putaruru",
@@ -204,10 +213,11 @@
         "Photograph the crystal water",
         "Break the drive to Taupo/Rotorua"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjC818gZdV6G2m7H6k8f4iHlvXg0Zd3uhXeH4eQWCWUJzFn8jONjaTHg_mchopi2cNoTTm-v19h3nuBn9ALdC6oAb_CquCRVm_NwNGRd0GwO-Hr2IPMh0wY0nPSYZH5_tXu0OHJko2rDeR0eaQ=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjA-j_OKsoN4dcX6Kn7v3g3LmVPSUiY7K08iw6kQTOareQ3HXSt53hGs-e4ALqY1ZBGEg-BTSj3xOKL6FRuQ2eLjRAGqMxsBIQsRZYqhFwygY-tWx81MLBQ8-rOebO1IjRlXLjx41RLTqVpL=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1501785888041-af3ef9619453?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Putaruru"
+      "airbnb_query": "Putaruru",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Putaruru%40-38.0360537%2C175.8352642"
     },
     {
       "slug": "tarawhanui",
@@ -225,10 +235,11 @@
         "Farmland nature reserve",
         "Estuary picnic"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjBtOy96nmwK8Ga-zEIsUqhDlLowfxmETHfay9w8el1Foon_SyVxHIFHkY1Rxy-vACdPzaLPnjuoRDIf0rix2b7WUCzaFlpk8sw0yOM_7egnTHwgWMBtLUs4tPey1I4DxjMr1SYgwQ6xBF-rp6c=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjCaXmAEZzO0d6V-Qck1E4VhFyEsFqpfNop0GWXPguFn6rShfjQXrHIbguDtphNrQSwCMbhM7gVxav7ecPJkocmOlIlpkkJOMRFNgsUU9_EG1__L60Ya0XjD2QscnCCWBD1hN2LImWmbokdzQA=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Tāwharanui"
+      "airbnb_query": "Tāwharanui",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=T%C4%81wharanui%40-36.3715199%2C174.8298353"
     },
     {
       "slug": "duder",
@@ -246,10 +257,11 @@
         "Picnic spots",
         "Birdwatching"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjCiZJivrJdWRbBjK3qgnhfSI6ONqyHZ791wFKZu46gQtOTshNB5CLLi1BUYtIXNY3I1I_3jCOldDTC8U9FVlYCNIbdH85sGNJuH1MjWY9w4cwUfyTfavl7w8bw2RC-Ht_Ptjg5FRuGGQMCdk78=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjBZRUwBdUaV3XG5vQ1qBg6RFZFbCY9F7-QmFU_hmitVCagfJOM0BDWVppqAtff__daTqXSUfh5Iz1SerwgcLMqbkO4VEXxmcAEWDpghNhfCw68yoc0mN9Jv_qYzCSNIC2JVDIu4EzXDj5w6R5w=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1501785888041-af3ef9619453?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Duder Regional Park"
+      "airbnb_query": "Duder Regional Park",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Duder%20Regional%20Park%40-36.9130977%2C175.0739732"
     },
     {
       "slug": "piha",
@@ -267,10 +279,11 @@
         "Surf lessons",
         "Mercer Bay Loop sunset"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjCeXChWhYEmQTDVpKSV9BVo9fK7KfXzzVUchPguepmAEf68x2VxUHRPlYL57DsQW7OC-_1_6RiZhZ7JX7O5HhsDOOcVs9Nm8Z2GiPjzVHqQYvBRZClgloibwulHnfueo0C_Cs9InhqZ5wP8=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjA0AE7ybNDmazps_v0kmuhi42MhHhTOrTonuq0gQNL9dPQ3lCUOg3ve_RdnMZYHrhRmvme9RlMuzfNbCQJpbLvE4arpFKOFbENM3XyY3M8bvtoa8wAtfjH539SBr-x4br1ctw3R8A-edQf2k8Q=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Piha"
+      "airbnb_query": "Piha",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Piha%40-36.9545485%2C174.4744364"
     },
     {
       "slug": "waiheke",
@@ -288,10 +301,11 @@
         "Coastal walking trails",
         "Art galleries"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjBJaNYLCCnJo9zj32f9_BILL16tRlS94I7qWyXBQcbYZ__Lh_8VMhCjvYuKmi7ONJOmgqDPzti-aJ43ZxewcuaRq2wCOhNrNdBXLC6zJY10xZdKyavqwQS7B0U3RBNLdiJELzEl22slWXXPYbw=s4800-w550-h360",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjBA7MaD4NMlG5eZAbci50j9ID5r14Y__qOzaYywSYG0He7Ttt9WcSrz2mq_2M-Nri0-Jz2mupKarBYmwQfXGtfB1sKRLmeR-PjMRF-YvwKKXI1_ywIb9caORtLRa4T2CQ8gcT2q7Z0n7wzmI0A=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Waiheke Island"
+      "airbnb_query": "Waiheke Island",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Waiheke%20Island%40-36.8000487%2C175.1009721"
     },
     {
       "slug": "takapuna",
@@ -309,10 +323,11 @@
         "Low-tide rock pools",
         "Sunset over the city"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjBf6X-IVN_7kRH_iVg-FXnlPMP9VsRPcQvS_V7aDvG7FpD9oHXmFQYLyOFr9WW8gHjv96TOJJD9wqUD7SRaneOEueOVOJa95O6pzxh_m2CC8Gkd4xvnGAexKvpc2csua3rD6kk5-vOeTXNP5IU-dT7o=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjBTtAmB66SRH215hWM2GXpf6mrcG0qdtLhX9ZnPMj-ivTZfgVOxDXMIlZeIHH43X0lKRoAbp3YB6JL_usJ1BRiggqhuGV3LMSFtZtyWFiMaJeTHLHd4uXxAZZkgViO3oPkvT1TmI3XqUiHCsGY=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Takapuna"
+      "airbnb_query": "Takapuna",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Takapuna%40-36.7879088%2C174.7756097"
     },
     {
       "slug": "cornwall",
@@ -330,10 +345,11 @@
         "Picnic under historic oaks",
         "Auckland skyline views"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjATMB7fqA13WMwYQ0PR9X0IzX1pbzPwvDxJrnVPORZw1dXkvhHhI6o6i7vkd4Wf17qHX7r_jo69MvQojKL2t2OjnBGkH3Qa1404nxcGUPZ7doDmcVwtQLZ8CSpGIDAfy88JKThsj-laXQriG20=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjBuBpy3Zdvl6czzN9ZjfKcjhAfnRXntlEckfnM3PMSvsCWjndaHVt0ViAoDb6xcGndCtSR4t6ImlXqj10gJgzUNOb4GZx7KJM0qi-0O2ARHpDOvMXy3A7qxAVezMDAqEiynHanyuF9VcFVNnF3_iMUmRg=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Cornwall Park"
+      "airbnb_query": "Cornwall Park",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Cornwall%20Park%40-36.8974467%2C174.7843076"
     },
     {
       "slug": "missionbay",
@@ -351,10 +367,11 @@
         "Swimming",
         "Views to Rangitoto"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjC8SePqBKqbg8BSgZkvVXDrzEPZCsLUIl9jH2FhuZF33S3ukWcwoU_Pk7o8qiHWAOsHQYRzv3QR9vLYyEPJYUuXyIx4bA8FUYhFzZyOEuaNz1OgkVJvmlpYbt8xj1TdV8jEBZzK7d10ToW9=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjCBNtJS7EUTjQNOar3LSMTct5QVfQdWqbquZSd2JT_VwX75ZN6yx4EaTIREqkpOgIHPpNzb2oeoGccMHXVyjR15hYrqRm_5gjb7EuiZ91zL_q3kNWzixvhb0aX0NEYNKAuUBQ__XdzC9gjr=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Mission Bay"
+      "airbnb_query": "Mission Bay",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Mission%20Bay%40-36.8517233%2C174.8310219"
     },
     {
       "slug": "devonport",
@@ -372,10 +389,11 @@
         "Naval museum",
         "Ferry with skyline views"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjBYGClnVs52xnrkFXDXyFoxG44XZZCnbZ1xgob4LL5cm91UnSAtO4XvwCAi74_NJNW96YituGLH0Am0DJOMsXSeVJeovY0LXu8E2fvLLhooUIz8ghu4Yn_q1JTc3SeIlynHOBmC6Geeo6hMg3c=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjA33qP7bPzzzLQlp075UjAuvjYc3TUyHoBmTDeAcbJSHiwFTcmFGavCKCOSPiDfAko9kkLjG_EXp5hroj0j818Dle7CUEbiyZYTmJctpE2ZymU0e2Fzv1LfSHZfEM6RBJ59LHUU_85_KeoJdYg=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1523482580671-d19b5e9b5c34?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Devonport"
+      "airbnb_query": "Devonport",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Devonport%40-36.8246787%2C174.7985219"
     },
     {
       "slug": "albertpark",
@@ -393,10 +411,11 @@
         "Lawn picnics",
         "Pairs with the Art Gallery next door"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjAKJoVg0OdPmY0OcCVwXjS7g5WHy7UzeK9IWdpXzcMa4jw2JxrFsXLR9_Mp5JVBt60Y3gi2PNRdsglFsDNvfQeGgbbDCqqNBkxnfXoYdSVTVWpgkK3qoxeuLB-DjgZQ277X6vu8zyPBI1RiKC4=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjCap7aQzPEvodhDPYqK_vjaGOquhp8KOOrCubzGib4fSmmlFCl7RX1PuzNoWrgE_PSpbpsxCx-ubCXhl_PBXx_E7o2JxClF_YbQel_N_isxiHnOqmn593UxyV5wXv3zVJev3zONFZGmYWDNUgqy_uwEJQ=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Albert Park"
+      "airbnb_query": "Albert Park",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Albert%20Park%40-36.8506426%2C174.7678881"
     },
     {
       "slug": "artgallery",
@@ -414,10 +433,11 @@
         "Gallery café",
         "Sculpture garden"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjCxu64543PXEGqn_BArlKtjRL9kX55UgtdjfOEs9IebdJ3-Qo0ArlnC09ni5pkTtZNmUEjpO2zVRWvvOkesak6VNYdOAEtCAXAIdR2MMBUL2xD2IMyoVNlsnPHaJ1g8dT8o-49L8aVYTl-kCE55-cl9kQ=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjD0uUk-PzVp3ej2CObpfj902qmI9d8cM_yOm9j-W2ITyvsoIkTvvgjXchTd2ub0sYkGBA5eRZMrsvtLHasGVOku7Va80fgBeYj1dUas6kjk0T1TK02ku0DoQKUjX4KBbtAtL7piD8dIE5PhcJ4=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Auckland Art Gallery"
+      "airbnb_query": "Auckland Art Gallery",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Auckland%20Art%20Gallery%40-36.8511952%2C174.7661728"
     },
     {
       "slug": "commercialbay",
@@ -435,10 +455,11 @@
         "High-end shopping",
         "Ferry terminal next door"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjCklaEVPM_U8uXx9lyYoOMnzYdZE3Ct_DIgOH3dbZTC2mXcaz8smCj37rA2dhVCAXjs9E4Qlx80BewiI7Wyqg43faSnir4mv_LBuySa8XVcEYtVJX0n6bQkcBNQQgdwo170lCjdR-xvCJT-8g8=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjBh97_PdwBLg4a7JOVIY6YLoCRflpLvhMTalSTKI5zhi-YaofH6zj6RQRvDU6hK5EUpY59rIgfzIhQIgosxE3_eYaG41Df_lttKwo-iktgBva0Y1rWFV5yMHn-btZTrMWTVj2wHsWzQ6Z1_=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Commercial Bay"
+      "airbnb_query": "Commercial Bay",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Commercial%20Bay%40-36.8438848%2C174.7661305"
     },
     {
       "slug": "civic",
@@ -456,10 +477,11 @@
         "Starlit auditorium ceiling",
         "Used as a King Kong filming location"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjBPFI3FUl_4mhQD5yD5VvbdMerbNPL4_PPrMkiLCg4JRf8LZqXbYiPJH_DEDQgh_Pr5qK0bwJqPsYNlNb7ty27rKr4DnvpI7bnSPKwU98RMxaMMqPQ4e1EHFrfhbx7B0faawpjK1vUS8H_o7BRmqpMlDw=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjADA5KD9N8kQDXmYMHdfCFzp0HBHCZ7s60rIv50SWDIOSPxEHPqZnzKjMLCOdLooCSX5h5PQyu3gViTy_fw_mH24StO6Vo3e2vjt9GwMgNMlEU0KE3tSsRTiS5RbBTn1K5Dmvv6HvlpAuQh=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Civic Theatre"
+      "airbnb_query": "Civic Theatre",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Civic%20Theatre%40-36.8509793%2C174.7641847"
     },
     {
       "slug": "viaduct",
@@ -477,10 +499,11 @@
         "Boat-watching",
         "Connects to Wynyard Quarter"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjCJlFq5RVax7HTet-KJS7he_qp-znFei0DKpAORfZwgXnwPRkEVR2_zbfIrzIoHjg973ig_9REupZXMvk5pzdDs0jp_BRkSwb3rihSbkOfpx4_tF6v_iXjemKDGvb8eClvW4qIWZXwZmHI8IA=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjA0o_S7Gx2WDtEvYL46IchC9yJSzajr5nJ7tHcQ2bAT3UwAqTGmlHL0h2tIvg0ZgPbFiJKeQLdyQW24ywX4Dd69AG2T6A_7H3UeDRGc75gnd1o61HP0RM8cfRVHE-dGdhmALUXtzzmuZrRHW1w=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Viaduct Harbour"
+      "airbnb_query": "Viaduct Harbour",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Viaduct%20Harbour%40-36.8429963%2C174.761586"
     },
     {
       "slug": "skytower",
@@ -498,10 +521,11 @@
         "SkyJump & SkyWalk",
         "Revolving restaurant"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjAL5ArUGC889RvCbcHVB1UEyEp0pKHYkCnh9rfMz9eZAKnnM38XrzAvz2O_vzur73b4KjlOfg_nyZEm_94-laHPJpnzoTPLkzuChSC8vaF9OFIDXY5RUBkwH7jtS29PfRWsfy_s9Prg_zkKjdw=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjDbYBm-ccE4kqE3f222EsTsgRsBz-TbZW7kIQ8byYAvuGZAZJehyqe7maF61V6Ym_PL1G7Bw7sgnFUs7S9zxdwROIADtrnkDeQNjwhbu58d-QPZk-mn-A8CE4S3Mo20YacBktqwNRKf2ibe1w=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Sky Tower"
+      "airbnb_query": "Sky Tower",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Sky%20Tower%40-36.848448%2C174.762191"
     },
     {
       "slug": "wintergardens",
@@ -519,10 +543,11 @@
         "Duck pond picnic",
         "Pair with Auckland Museum next door"
       ],
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjC6LBBbcgJpCguHQiLC3XeD0DnV9FZZs2Vhk1q_47996ine2VWcY8Orc7MSTKto0LAmPWOokUfQ_wGQtLmFTxsjXQFGEaJFkFKetNzGi3qj57DPheDBiVJrnVRzjnVSV3XPIbT64w6A61f8=s4800-w800-h600",
-      "image_url_2": "https://lh3.googleusercontent.com/place-photos/AG9NLjBeUSIUCyZl3xQok3jWtbx_7brbphNftB9HppzyFrR5fa28t2zjTmFSDdrAdoULNCbluXfzVCMBBrlgI4Vq1fhXioMKICZQatu7y7tWMhHp9xww690omVvI8NdnWB8HlVrxSxeUpH0P_0t1giA=s4800-w800-h600",
+      "image_url": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1400&q=80",
+      "image_url_2": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
       "airport_code": null,
-      "airbnb_query": "Domain Wintergardens"
+      "airbnb_query": "Domain Wintergardens",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Domain%20Wintergardens%40-36.8602403%2C174.7740933"
     }
   ],
   "sub_locations": [
@@ -531,84 +556,192 @@
       "name": "Skyline Gondola",
       "lat": -45.0285011,
       "lng": 168.6561937,
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjC1L6JdNyLuzB4qwIyQM4xBYcSp0brgIOC94OFEa3AWnfwdExxjcEU07LqgvB6bfkTzIEc4iQ0K4scf2vbtLl_VDxwPpWIzhkSDM27ce8jZxLaJjv3lf-37sOI0upbvFrFWIhphLTPVikOQkQ=s4800-w800-h600"
+      "image_url": "https://images.unsplash.com/photo-1578271881656-fe9fac4055ba?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Skyline%20Gondola%40-45.0285011%2C168.6561937"
     },
     {
       "parent": "queenstown",
       "name": "Shotover Jet",
       "lat": -44.9870794,
       "lng": 168.6713311,
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjD7ZCELHpjZeqWxcNMHUiM4Y4VIFiZdxvRoTHVkd5PmNYcCON6ZQQ9sYeQu0P01nELJF2_2ro4YQfEIQR_9_2mwH9tH6GPAK4XUkKnax1M-iy5pEmTvbXPNcjs3pD_aoUq-5N69NergFSsqkUI=s4800-w800-h600"
+      "image_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Shotover%20Jet%40-44.9870794%2C168.6713311"
     },
     {
       "parent": "brisbane",
       "name": "Australia Zoo",
       "lat": -26.8357181,
       "lng": 152.963113,
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjDbWLH1v6NulfoNrbeBjrgCNdYPpzDA27jzr2Ik-HwWNVpYC8Q-neiXFgKddNfQ9nThTa7sfqKVJBStcdUr7nGnPMIOM_Ur4izz8YnBi972FM24Pb6xaAZ1tPsv_v-LI_9oCRvhMmg48RvHvw=s4800-w800-h600"
+      "image_url": "https://images.unsplash.com/photo-1564349683136-77e08bbbd8ea?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Australia%20Zoo%40-26.8357181%2C152.963113"
     },
     {
       "parent": "brisbane",
       "name": "Story Bridge",
       "lat": -27.4636326,
       "lng": 153.0358644,
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjDz9gD6GCgktrBrstvlTr0_AmoIpi5yIIgwygNJ6jhf9KbsCcV2hsUwrPdOmzZOYsia-jvehP33fYksT5hl-Fr_vI0mUi8xzTG4h546mK1np5rVpYwCbn5VOIpO6YCXk1rVrmk5tmbM805rrRA=s4800-w800-h600"
+      "image_url": "https://images.unsplash.com/photo-1523482580671-d19b5e9b5c34?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Story%20Bridge%40-27.4636326%2C153.0358644"
     },
     {
       "parent": "sydney",
       "name": "Sydney Opera House",
       "lat": -33.8567844,
       "lng": 151.2152967,
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjBkzketgC6pebiq8IHP4IsyQW0o0cHZKT3LFMJkBC9vI9udtK5T4adsP0UHVdhsqQAgK0Lo-0alRFXQ8gWEfkXZNkNAsIHNA3K2v9NZaYKq0Echqxo1VagrpY8P54-rmXDqRywSXd5zKX4JwQ=s4800-w800-h600"
+      "image_url": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Sydney%20Opera%20House%40-33.8567844%2C151.2152967"
     },
     {
       "parent": "sydney",
       "name": "Taronga Zoo",
       "lat": -33.8435473,
       "lng": 151.2413418,
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjB8cT7g9L8vDdPaouuuYQkAJ8ofUxf2Chqu6bJOLxTOlGVAZ_OXdWMb_OgeLQRcJIp6H5hfzVNG64wxoXdcbWLupn9bRjkY5ZIS13w8EJMKaKumgTIJwBWmC-pCjK7lNMfAfLX60vv_ZInbITzj_YXQnw=s4800-w800-h600"
+      "image_url": "https://images.unsplash.com/photo-1564349683136-77e08bbbd8ea?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Taronga%20Zoo%40-33.8435473%2C151.2413418"
     },
     {
       "parent": "taupo",
       "name": "Huka Falls",
       "lat": -38.6486357,
       "lng": 176.0900496,
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjAkvexX9m7y3Gyu_RktGuu6whYAzwVSe9pLd3ob17L_tyVNUlaxjTfmuSMGP3iaQQc2Wvj4DBYDZmiyIZYc1gS4iO8hdy-VfdelJ4d3LVKZhp-S7yBh3IotDCRVYndrJScqjmAsUshBG__WXw=s4800-w800-h600"
+      "image_url": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Huka%20Falls%40-38.6486357%2C176.0900496"
     },
     {
       "parent": "rotorua",
       "name": "Skyline Rotorua",
       "lat": -38.110432,
       "lng": 176.221969,
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjD_QAJDAYzDQy3aC4utuKuLee2a60OOJWuxpiONe_ZZjBJm1OSEKHm4pZ_NmwX8LEr8uzEug4pTswtsoKX4FbbylK1z7aBJopwKbobbggrtJvgZY6o1RzIgOVAwGeGWIJYx7b7R6KnEZWDx=s4800-w800-h600"
+      "image_url": "https://images.unsplash.com/photo-1578271881656-fe9fac4055ba?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Skyline%20Rotorua%40-38.110432%2C176.221969"
     },
     {
       "parent": "tauranga",
       "name": "Mauao Summit Track",
       "lat": -37.6294,
       "lng": 176.1826,
-      "image_url": null
+      "image_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Mauao%20Summit%20Track%40-37.6294%2C176.1826"
     },
     {
       "parent": "bayofislands",
       "name": "Waitangi Treaty Grounds",
       "lat": -35.2677559,
       "lng": 174.0807225,
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjBSgB2pgc57i-_1fjDo2mYDQCw-DcJoe1Q4L5oaYCBagaL_VtozJ86hR_HqLrVhHKsszIjMJljzcUMTWFOvIIQvnoyHdFxo1qnrYxecDaH5Hxjx9pFdd_hcRpqfUSlaioIELLPMq2gMtn69lA=s4800-w800-h600"
+      "image_url": "https://images.unsplash.com/photo-1501785888041-af3ef9619453?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Waitangi%20Treaty%20Grounds%40-35.2677559%2C174.0807225"
     },
     {
       "parent": "piha",
       "name": "Kitekite Falls",
       "lat": -36.9522606,
       "lng": 174.4841941,
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjDRf4xzET8BlPu1kTZr9vmLrvja4pyf9Z4vrYC2jpwcrT_76rWPdF3Al0dfs3dWOkPFwHp9-JJwryioXvjIeS41tLr-01iVlvu7-5iVsF-NmTglMy5FvpfIL5e_q2E2gEI3F50DFLAJ510a=s4800-w800-h600"
+      "image_url": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Kitekite%20Falls%40-36.9522606%2C174.4841941"
     },
     {
       "parent": "piha",
       "name": "Mercer Bay Loop",
       "lat": -36.9697296,
       "lng": 174.468298,
-      "image_url": "https://lh3.googleusercontent.com/place-photos/AG9NLjDiy6kdCwgB-tvEdWHMHgbf3RPRK4-WFaCHEKr-Z_tZN5ApmkOSqLCoUpVKXDp6ZI9UMII4dpu71_hp_3mg40R_IAGh-ncuO0S_WAsflJLPE_SScck6IEvw4jPdldbY9ivPsnD6SlIWZIVVmp8=s4800-w800-h600"
+      "image_url": "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Mercer%20Bay%20Loop%40-36.9697296%2C174.468298"
+    },
+    {
+      "parent": "queenstown",
+      "name": "Wanaka",
+      "lat": -44.6942,
+      "lng": 169.1417,
+      "image_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Wanaka%40-44.6942%2C169.1417"
+    },
+    {
+      "parent": "queenstown",
+      "name": "Milford Sound",
+      "lat": -44.671,
+      "lng": 167.925,
+      "image_url": "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Milford%20Sound%40-44.671%2C167.925"
+    },
+    {
+      "parent": "queenstown",
+      "name": "Remarkables",
+      "lat": -45.07,
+      "lng": 168.81,
+      "image_url": "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Remarkables%40-45.07%2C168.81"
+    },
+    {
+      "parent": "brisbane",
+      "name": "Gold Coast",
+      "lat": -28.0167,
+      "lng": 153.4,
+      "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%40-28.0167%2C153.4"
+    },
+    {
+      "parent": "brisbane",
+      "name": "Sunshine Coast",
+      "lat": -26.65,
+      "lng": 153.0667,
+      "image_url": "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Coast%40-26.65%2C153.0667"
+    },
+    {
+      "parent": "brisbane",
+      "name": "Tangalooma",
+      "lat": -27.179,
+      "lng": 153.37,
+      "image_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Tangalooma%40-27.179%2C153.37"
+    },
+    {
+      "parent": "sydney",
+      "name": "Bondi Beach",
+      "lat": -33.8915,
+      "lng": 151.2767,
+      "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Bondi%20Beach%40-33.8915%2C151.2767"
+    },
+    {
+      "parent": "sydney",
+      "name": "Manly",
+      "lat": -33.7969,
+      "lng": 151.284,
+      "image_url": "https://images.unsplash.com/photo-1523482580671-d19b5e9b5c34?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Manly%40-33.7969%2C151.284"
+    },
+    {
+      "parent": "fiji",
+      "name": "Cloud 9",
+      "lat": -17.78,
+      "lng": 177.16,
+      "image_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Cloud%209%40-17.78%2C177.16"
+    },
+    {
+      "parent": "fiji",
+      "name": "Mamanuca Islands",
+      "lat": -17.6667,
+      "lng": 177.0833,
+      "image_url": "https://images.unsplash.com/photo-1589197331516-4d84b72eb2ad?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Mamanuca%20Islands%40-17.6667%2C177.0833"
+    },
+    {
+      "parent": "fiji",
+      "name": "Shark Dive",
+      "lat": -18.1667,
+      "lng": 177.45,
+      "image_url": "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Shark%20Dive%40-18.1667%2C177.45"
+    },
+    {
+      "parent": "fiji",
+      "name": "Denarau",
+      "lat": -17.77,
+      "lng": 177.38,
+      "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Denarau%40-17.77%2C177.38"
     }
   ]
 }

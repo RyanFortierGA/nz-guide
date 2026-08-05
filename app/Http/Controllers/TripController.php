@@ -114,6 +114,7 @@ class TripController extends Controller
             'day_index' => ['nullable', 'integer', 'min:1', 'max:'.$maxDay],
             'planned_time' => ['nullable', 'date_format:H:i'],
             'notes' => ['nullable', 'string', 'max:500'],
+            'nights' => ['nullable', 'integer', 'min:0', 'max:30'],
         ]);
 
         if (! $trip->locations()->where('location_id', $location->id)->exists()) {
@@ -123,15 +124,38 @@ class TripController extends Controller
                 'day_index' => $data['day_index'] ?? null,
                 'planned_time' => $data['planned_time'] ?? null,
                 'notes' => $data['notes'] ?? null,
+                'nights' => $data['nights'] ?? null,
             ]);
         } else {
             $existing = $trip->locations()->where('location_id', $location->id)->first();
-            $trip->locations()->updateExistingPivot($location->id, [
-                'day_index' => array_key_exists('day_index', $data) ? $data['day_index'] : $existing?->pivot?->day_index,
-                'planned_time' => array_key_exists('planned_time', $data) ? $data['planned_time'] : $existing?->pivot?->planned_time,
-                'notes' => array_key_exists('notes', $data) ? $data['notes'] : $existing?->pivot?->notes,
-            ]);
+            $payload = [];
+            foreach (['day_index', 'planned_time', 'notes', 'nights'] as $field) {
+                if (array_key_exists($field, $data)) {
+                    $payload[$field] = $data[$field];
+                } else {
+                    $payload[$field] = $existing?->pivot?->{$field};
+                }
+            }
+            $trip->locations()->updateExistingPivot($location->id, $payload);
         }
+
+        return back();
+    }
+
+    public function updateCosts(Request $request): RedirectResponse
+    {
+        $data = $request->validate([
+            'party_size' => ['required', 'integer', 'min:1', 'max:12'],
+            'include_auckland_stay' => ['sometimes', 'boolean'],
+            'auckland_airbnb_night' => ['nullable', 'integer', 'min:50', 'max:800'],
+        ]);
+
+        $trip = Trip::defaultFor($request->user());
+        $trip->fill([
+            'party_size' => $data['party_size'],
+            'include_auckland_stay' => $request->boolean('include_auckland_stay', $trip->include_auckland_stay),
+            'auckland_airbnb_night' => $data['auckland_airbnb_night'] ?? $trip->auckland_airbnb_night,
+        ])->save();
 
         return back();
     }
@@ -139,6 +163,7 @@ class TripController extends Controller
     private function plannerProps(Trip $trip): array
     {
         $trip->load(['locations' => fn ($q) => $q->with('subLocations'), 'user', 'blocks']);
+        $estimator = app(\App\Services\TripCostEstimator::class);
 
         return [
             'trip' => [
@@ -154,6 +179,9 @@ class TripController extends Controller
                 'share_title' => $trip->shareTitle(),
                 'share_blurb' => $trip->shareDescription(),
                 'setup_complete' => $trip->setup_complete,
+                'party_size' => $trip->party_size ?: 2,
+                'include_auckland_stay' => (bool) $trip->include_auckland_stay,
+                'auckland_airbnb_night' => $trip->auckland_airbnb_night ?: 180,
                 'days' => $trip->days(),
                 'locations' => $trip->locations->map(fn (Location $l) => [
                     'id' => $l->id,
@@ -172,10 +200,18 @@ class TripController extends Controller
                         ? substr((string) $l->pivot->planned_time, 0, 5)
                         : null,
                     'notes' => $l->pivot->notes,
+                    'nights' => $l->pivot->nights,
+                    'suggested_nights' => $l->cost_suggested_nights,
                     'sort_order' => $l->pivot->sort_order,
+                    'cost_preview' => $estimator->forLocationAddOn(
+                        $l,
+                        $trip->party_size ?: 2,
+                        $l->pivot->nights !== null ? (int) $l->pivot->nights : null
+                    ),
                 ])->values(),
                 'blocks' => $trip->blocks->map->toPlannerArray()->values(),
             ],
+            'costs' => $estimator->forTrip($trip),
             'blockTypes' => \App\Models\TripBlock::TYPE_LABELS,
             'categoryColors' => [
                 'flying' => '#ff5a5f',
